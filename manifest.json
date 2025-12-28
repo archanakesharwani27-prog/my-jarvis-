@@ -1,0 +1,17 @@
+{
+  "short_name": "Jarvis",
+  "name": "J.A.R.V.I.S AI - Ansh Kesharwani",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3665/3665923.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#52e5ff"
+}
+
