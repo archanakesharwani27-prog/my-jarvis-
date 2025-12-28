@@ -46,7 +46,5 @@ def ask_jarvis():
         return jsonify({"reply": "Connection Slow."})
 
 if __name__ == '__main__':
-    # Render ke liye port process.env se lena zaroori ho sakta hai
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
-
