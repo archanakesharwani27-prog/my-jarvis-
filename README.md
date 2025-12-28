@@ -1,0 +1,1 @@
+This is a mini AI Assistant designed to help you with your daily small tasks. Currently, this is just a trial run. If the response is good, it will be expanded to a larger scale. Please support me so I can expand it to larger projects. Thank you for using this application.
