@@ -9,6 +9,7 @@ app = Flask(__name__, template_folder='templates')
 @app.route('/')
 def index():
     try:
+        # Pura path check karne ke liye index.html load kar rahe hain
         return render_template('index.html')
     except Exception as e:
         return f"Template Error: {str(e)}"
