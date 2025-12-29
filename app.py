@@ -7,12 +7,12 @@ from flask import Flask, render_template, request, jsonify
 base_dir = os.path.abspath(os.path.dirname(__file__))
 template_dir = os.path.join(base_dir, 'templates')
 
-app = Flask(__name__, template_folder=template_dir)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
-    try:
-        return render_template('index.html')
+        return
+    render_template('index.html')
     except Exception as e:
         return f"System Error: {str(e)}. Base Dir: {base_dir}"
 
