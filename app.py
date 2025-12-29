@@ -3,16 +3,18 @@ import requests
 import re
 from flask import Flask, render_template, request, jsonify
 
-# Flask ko batana ki templates folder kahan hai
-app = Flask(__name__, template_folder='templates')
+# Render ke liye sahi path set karna
+base_dir = os.path.abspath(os.path.dirname(__file__))
+template_dir = os.path.join(base_dir, 'templates')
+
+app = Flask(__name__, template_folder=template_dir)
 
 @app.route('/')
 def index():
     try:
-        # Pura path check karne ke liye index.html load kar rahe hain
         return render_template('index.html')
     except Exception as e:
-        return f"Template Error: {str(e)}"
+        return f"System Error: {str(e)}. Base Dir: {base_dir}"
 
 @app.route('/ask_jarvis', methods=['POST'])
 def ask_jarvis():
